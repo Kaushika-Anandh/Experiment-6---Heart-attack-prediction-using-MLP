@@ -30,8 +30,8 @@ Plot the error convergence during training using plt.plot() and plt.show().<br>
 
 ## Program:
 ```python
-program by: kaushika. A
-reg no: 212221230048
+#program by: kaushika. A
+#reg no: 212221230048
 ```
 
 ```python
