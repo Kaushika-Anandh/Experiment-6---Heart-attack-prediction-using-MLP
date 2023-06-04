@@ -1,6 +1,40 @@
-# Experiment-6---Heart-attack-prediction-using-MLP
+Exp.No : 05 
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+&emsp;
+Date : 01.06.2023
+<br>
+
+# Heart Attack Prediction using MLP
 ## Aim:
-      To construct a  Multi-Layer Perceptron to predict heart attack using Python
+To construct a  Multi-Layer Perceptron to predict heart attack using Python
+
+## EQUIPMENTS REQUIRED:
+
+Hardware – PCs
+
+Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
+
+
 ## Algorithm:
 ### Step 1:
 Import the required libraries: numpy, pandas, MLPClassifier, train_test_split, StandardScaler, accuracy_score, and matplotlib.pyplot.<br>
@@ -26,13 +60,9 @@ Print the accuracy of the model.<br>
 Plot the error convergence during training using plt.plot() and plt.show().<br>
 <br>
 <br>
-<br>
+
 
 ## Program:
-```python
-#program by: kaushika. A
-#reg no: 212221230048
-```
 
 ```python
 import numpy as np
@@ -44,7 +74,6 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 ```
 <br>
-<br>
 
 ```python
 data=pd.read_csv("heart.csv")
@@ -52,42 +81,30 @@ X=data.iloc[:, :-1].values #features
 Y=data.iloc[:, -1].values  #labels 
 ```
 <br>
-<br>
-
 ```python
 X_train,X_test,y_train,y_test=train_test_split(X,Y,test_size=0.2,random_state=42)
 ```
 <br>
-<br>
-
 ```python
 scaler=StandardScaler()
 X_train=scaler.fit_transform(X_train)
 X_test=scaler.transform(X_test)
 ```
 <br>
-<br>
-
 ```python
 mlp=MLPClassifier(hidden_layer_sizes=(100,100),max_iter=1000,random_state=42)
 training_loss=mlp.fit(X_train,y_train).loss_curve_
 ```
 <br>
-<br>
-
 ```python
 y_pred=mlp.predict(X_test)
 ```
 <br>
-<br>
-
 ```python
 accuracy=accuracy_score(y_test,y_pred)
 print("Accuracy",accuracy)
 ```
 <br>
-<br>
-
 ```python
 plt.plot(training_loss)
 plt.title("MLP Training Loss Convergence")
@@ -98,7 +115,7 @@ plt.show()
 ## Output:
 ![](1.PNG)
 
-![](2.png)
+<img src="https://github.com/Kaushika-Anandh/Experiment-6---Heart-attack-prediction-using-MLP/blob/main/2.png" width="400" height="380">
 ## Result:
      Thus, an ANN with MLP is constructed and trained to predict the heart attack using python.
      
