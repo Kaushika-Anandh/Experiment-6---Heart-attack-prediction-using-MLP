@@ -123,7 +123,8 @@ plt.show()
 ![](1.PNG)
 
 <img src="https://github.com/Kaushika-Anandh/Experiment-6---Heart-attack-prediction-using-MLP/blob/main/2.png" width="400" height="380">
+
 ## Result:
-     Thus, an ANN with MLP is constructed and trained to predict the heart attack using python.
+Thus, an ANN with MLP is constructed and trained to predict the heart attack using python.
      
 
